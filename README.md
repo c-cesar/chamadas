@@ -1,26 +1,16 @@
-# Protótipo de um site que agregue as chamadas de artigos para revistas científicas.
+# Chamadas
+
+Este é um protótipo de site que agregue chamadas de artigos para revistas científicas. Ele cadastra o RSS de notícias das revistas e mostra as publicações aqui. Versão de testes em execução em https://chamadas.masdivago.cc
 
 Este projeto utiliza [Hades](https://github.com/kitallis/hades) e [Zola](https://www.getzola.org/).
 
-Para adicionar fontes basta editr o arquivo chamadas.toml seguindo o modelo.
+Para adicionar fontes basta editar o arquivo `chamadas.toml` seguindo o modelo.
 
 ```
 [[authors]]
-name = "Temporalidades - UFMG"
-feed = "https://periodicos.ufmg.br/index.php/temporalidades/gateway/plugin/WebFeedGatewayPlugin/rss2"
-tag = ["UFMG", "História"]
+name = "Boletim do Tempo Presente"
+feed = "https://periodicos.ufs.br/tempopresente/gateway/plugin/AnnouncementFeedGatewayPlugin/rss2"
+tags = ["UFS", "História"]
 ```
 
-Se você quiser rodar uma cópia, deve instalar o Hades e executar
-
-```
-hades -c chamadas.toml
-```
-
-Isso vai povoar a pasta `site/conent` para o Zola. Para gerar o site é preciso executar o zola com:
-
-```
-zola build
-```
-
-Isso vai povoar a pasta `public` com arquivos HTML. Estes arquivos devem ser expostos para um servidor de arquivos estáticos.
+É possível editar o arquivo pelo próprio site do GitHub, sem precisar usar a linha de comando.

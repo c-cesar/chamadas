@@ -1,0 +1,2 @@
+site/content/*
+!site/content/_index.md
