@@ -1,0 +1,12 @@
+title = "Chamadas"
+description = "Chamadas para artigos"
+theme = "lightspeed"
+base_url = "https://chamadas.masdivago.cc"
+compile_sass = true
+build_search_index = true
+generate_feed = true
+
+[markdown]
+highlight_code = true
+
+[extra]

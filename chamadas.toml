@@ -1,0 +1,28 @@
+[setting]
+out_dir = "site/content"
+preamble_ext = "zola-toml"
+workers = 25
+tags = []
+
+# CIÊNCIAS HUMANAS
+##################
+
+## HISTÓRIA
+
+[[authors]]
+name = "Temporalidades - UFMG"
+feed = "https://periodicos.ufmg.br/index.php/temporalidades/gateway/plugin/WebFeedGatewayPlugin/rss2"
+tag = ["UFMG", "História"]
+
+
+
+# CIÊNCIAS SOCIAIS APLICADAS
+############################
+
+## CIÊNCIA DA INFORMAÇÃO
+
+[[authors]]
+name = "Ciência da Informação - IBICT"
+feed = "https://revista.ibict.br/ciinf/gateway/plugin/AnnouncementFeedGatewayPlugin/rss2"
+tag = ["IBICT", "Ciência da Informação"]
+
